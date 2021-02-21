@@ -19,7 +19,39 @@ th,td {
 table {
     border-collapse:  collapse; /* セルの線を重ねる */
 }
+h2{
+    color: #4F5F6D;
+    padding: 15px;
+    font-weight: bold;
+}
 
 .c_pointer{
     cursor:pointer;
+}
+
+.mindmap_image{
+    width: 500px;
+}
+
+.bg_row_color{
+    background-color: #f2f6f9;
+}
+.bg_padding{
+    padding: 5px;
+}
+.bg_col_color{
+    background-color: #ffffff;
+}
+.bg_col_settings{
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+    padding: 15px;
+}
+.table_center{
+    margin: auto;
+}
+.nav_text{
+    color: white;
+    font-weight: bold;
 }
