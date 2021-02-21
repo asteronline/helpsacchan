@@ -30,7 +30,8 @@ h2{
 }
 
 .mindmap_image{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .bg_row_color{
