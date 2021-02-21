@@ -3,12 +3,602 @@
 <html lang="jp">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="./css/helpsacchan.css" rel="stylesheet">
   <title>ASTER</title>
 
 </head>
 
 <body>
-テストページ
+  <nav class="navbar navbar-expand-sm bg_base_color">
+
+    <a href="#" class="navbar-brand header_title">TwitterBot桜子さん</a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">使い方</a>
+      <a class="nav-item nav-link" href="#">コマンド表</a>
+    </div>
+  </nav>
+
+  <div class="container resizeimage center">
+    <img src="./src/top.jpg" class="img-responsive center-block" />
+  </div>
+  
+
+  <div id="HowToUse" class="container">
+    <div class="row">
+      <h2>基本的な使い方</h2>
+      <div class="col-xs-12 col-lg-6">
+        「@helpsacchan 〇〇について教えて」<br>
+        「@helpsacchan ｘｘとは？」<br>
+        といったように「@helpsacchan」にメンションをつけて質問すると、その質問にお答えします。<br>
+        今答えられる質問については、ページ下部の「コマンド表」をご参照ください。<br>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <table>
+          <tr><th>例　(クリックでコピーされます)</th></tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 桜子さんのヘルプ" onclick="copy_msg()">
+              @helpsacchan 桜子さんのヘルプ
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 品質保証のおすすめの本は" onclick="copy_msg()">
+              @helpsacchan 品質保証のおすすめの本は
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 動画はどこ？" onclick="copy_msg()">
+              @helpsacchan 動画はどこ？
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan こんにちは" onclick="copy_msg()">
+              @helpsacchan こんにちは
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テキストを会社で使ってもいい？" onclick="copy_msg()">
+              @helpsacchan テキストを会社で使ってもいい？
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="JSTQB" class="container">
+    <div class="row">
+      <h2>JSTQBの用語も答えてくれる！</h2>
+      <div class="col-xs-12 col-lg-6">
+        「@helpsacchan テストハーネスって何」<br>
+        「@helpsacchan テストベースとは」<br>
+        といったようなJSTQBの用語の質問について、<a href="https://glossary.istqb.org/jp/search">JSTQBの用語集</a>に記載されている内容をお答えします。<br>
+        <a href="https://glossary.istqb.org/jp/search">JSTQBの用語集</a>に載っていなければ返せませんのでお気をつけください。
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <table>
+          <tr><th>例　(クリックでコピーされます)</th></tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テストハーネスってなに" onclick="copy_msg()">
+              @helpsacchan テストハーネスってなに
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テストベースとは" onclick="copy_msg()">
+              @helpsacchan テストベースとは
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ユーザーストーリーについて教えて" onclick="copy_msg()">
+              @helpsacchan ユーザーストーリーについて教えて
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ローレベルテストケースとは何" onclick="copy_msg()">
+              @helpsacchan ローレベルテストケースとは何
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 偽陽性って？" onclick="copy_msg()">
+              @helpsacchan 偽陽性って？
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="Homete" class="container">
+    <div class="row">
+      <h2>すごく褒めてくれる！</h2>
+      <div class="col-xs-12 col-lg-6">
+        とにかく褒めてほしいときってありますよね。<br>
+        そんな時に桜子さんに「ほめて」というと、褒めてくれたり苦労をねぎらってくれたりします。<br>
+        日々の疲れをいやしてください。<br>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <table>
+          <tr><th>例　(クリックでコピーされます)</th></tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 褒めて" onclick="copy_msg()">
+              @helpsacchan 褒めて
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ほめてください" onclick="copy_msg()">
+              @helpsacchan ほめてください
+            </td>
+          </tr>
+          <tr>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 今日頑張ったんだ" onclick="copy_msg()">
+              @helpsacchan 今日頑張ったんだ
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="Wakaranai" class="container">
+    <div class="row">
+      <h2>答えられないとき</h2>
+      <div class="col-xs-12 col-lg-6">
+        桜子さんがわからないときもあります。<br>
+        そんなときは中の人に聞いて答えてくれます。<br>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <div class="resizeimage center">
+          <img src="./src/wakaranai.jpg" class="img-responsive center-block" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Command" class="container">
+    <div class="row">
+      <h2>コマンド表 (よく使いそうなもの)</h2>
+      <div class="col-xs-12 col-lg-12">
+        <table>
+          <tr><th>カテゴリ</th><th>聞きたいこと</th><th>例　(クリックでコピーされます)</th></tr>
+          <tr><td>ヘルプ</td><td>使い方がわからない</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ボットの使い方" onclick="copy_msg()">
+              @helpsacchan ボットの使い方
+            </td>
+          </tr>
+          <tr><td>誉め言葉</td><td>ひたすら褒めてほしい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 褒めて" onclick="copy_msg()">
+              @helpsacchan 褒めて
+            </td>
+          </tr>
+          <tr><td>JSTQBの用語</td><td>JSTQBの用語の意味が知りたい<br>(多いので1例のみ掲載)</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テストハーネスって何" onclick="copy_msg()">
+              @helpsacchan テストハーネスって何
+            </td>
+          </tr>
+          <tr><td>おすすめ</td><td>品質保証のオススメの本が知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 品質保証のおすすめの本を教えてください" onclick="copy_msg()">
+              @helpsacchan 品質保証のおすすめの本を教えてください
+            </td>
+          </tr>
+          <tr><td>おすすめ</td><td>開発のオススメの本が知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 開発のオススメの本は？" onclick="copy_msg()">
+              @helpsacchan 開発のオススメの本は？
+            </td>
+          </tr>
+          <tr><td>おすすめ</td><td>テストのオススメの本が知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テストのおすすめ書籍は何？" onclick="copy_msg()">
+              @helpsacchan テストのおすすめ書籍は何？
+            </td>
+          </tr>
+          <tr><td>おすすめ</td><td>テストの学習サイトが知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 学習サイトのおすすめは" onclick="copy_msg()">
+              @helpsacchan 学習サイトのおすすめは
+            </td>
+          </tr>
+          <tr><td>JaSST</td><td>JaSSTの開催日を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan JaSSTの開催日を教えて" onclick="copy_msg()">
+              @helpsacchan JaSSTの開催日を教えて
+            </td>
+          </tr>
+          <tr><td>JSTQB</td><td>JSTQBについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan JSTQBのことを教えて" onclick="copy_msg()">
+              @helpsacchan JSTQBのことを教えて
+            </td>
+          </tr>
+          <tr><td>ご意見・ご要望</td><td>要望を伝えたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 要望は誰に言えばいいの？" onclick="copy_msg()">
+              @helpsacchan 要望は誰に言えばいいの？
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+          
+
+
+
+
+  <div id="Command" class="container">
+    <div class="row">
+      <h2>コマンド表 (ASTER系)</h2>
+      <div class="col-xs-12 col-lg-12">
+        <table>
+          <tr><th>カテゴリ</th><th>聞きたいこと</th><th>例　(クリックでコピーされます)</th></tr>
+          <tr><td>ASTERオンラインセミナー</td><td>講師がだれか知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 講師は誰？" onclick="copy_msg()">
+              @helpsacchan 講師は誰？
+            </td>
+          </tr>
+
+
+          <tr><td>ASTERオンラインセミナー</td><td>動画の場所を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 動画の場所を教えて" onclick="copy_msg()">
+              @helpsacchan 動画の場所を教えて
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>どうして動画配信しているか知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan どうして動画配信してるの？" onclick="copy_msg()">
+              @helpsacchan どうして動画配信してるの？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>動画の再生時間を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 動画は何分くらいなの？" onclick="copy_msg()">
+              @helpsacchan 動画は何分くらいなの？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>動画が何本あるか知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 動画はいくつ出しているの？" onclick="copy_msg()">
+              @helpsacchan 動画はいくつ出しているの？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>どんな動画を配信してるか知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan どんな動画を配信していますか？" onclick="copy_msg()">
+              @helpsacchan どんな動画を配信していますか？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>次どんな動画を配信するか知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 次の動画を教えて" onclick="copy_msg()">
+              @helpsacchan 次の動画を教えて
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>動画のロケ地を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 動画のロケ地はどこ" onclick="copy_msg()">
+              @helpsacchan 動画のロケ地はどこ
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>動画を会社の教材として使いたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 動画を会社で使ってもいいですか？" onclick="copy_msg()">
+              @helpsacchan 動画を会社で使ってもいいですか？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>使用しているテキストの場所を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 資料はどこですか？" onclick="copy_msg()">
+              @helpsacchan 資料はどこですか？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>テキストを会社の教材として使いたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テキストを会社で使ってもいいですか？" onclick="copy_msg()">
+              @helpsacchan テキストを会社で使ってもいいですか？
+            </td>
+          </tr>
+
+
+          <tr><td>ASTERオンラインセミナー</td><td>セミナーのコンセプトを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan セミナーの目的は何？" onclick="copy_msg()">
+              @helpsacchan セミナーの目的は何？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>セミナーがいつ行われるか知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan セミナーはいつ実施ですか？" onclick="copy_msg()">
+              @helpsacchan セミナーはいつ実施ですか？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>セミナーの予定を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan セミナーの予定を教えてください" onclick="copy_msg()">
+              @helpsacchan セミナーの予定を教えてください
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>セミナーの料金を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan セミナーの参加費はおいくらですか？" onclick="copy_msg()">
+              @helpsacchan セミナーの参加費はおいくらですか？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>セミナーの参加方法を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 参加はどうやればいいの？" onclick="copy_msg()">
+              @helpsacchan 参加はどうやればいいの？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>セミナーに必要なモノを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan セミナーに必要なものを教えてください" onclick="copy_msg()">
+              @helpsacchan セミナーに必要なものを教えてください
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>参加者がどんな人か知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 参加者はどんな人？" onclick="copy_msg()">
+              @helpsacchan 参加者はどんな人？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>今までどんな活動をしてきたかを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan どんな活動をしているんですか？" onclick="copy_msg()">
+              @helpsacchan どんな活動をしているんですか？
+            </td>
+          </tr>
+          <tr><td>ASTERオンラインセミナー</td><td>規約を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 規約を教えてください" onclick="copy_msg()">
+              @helpsacchan 規約を教えてください
+            </td>
+          </tr>
+          
+          <tr><td>ASTERオンラインセミナー</td><td>お問合せ方法を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 問合せはどこからですか？" onclick="copy_msg()">
+              @helpsacchan 問合せはどこからですか？
+            </td>
+          </tr>
+          
+          <tr><td>ASTERオンラインセミナー</td><td>講師をしている人のことを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テスターちゃんの人について教えて" onclick="copy_msg()">
+              @helpsacchan テスターちゃんの人について教えて
+            </td>
+          </tr>
+          <tr><td>ASTER</td><td>ASTERの活動が知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ASTERってどんなことしてるの？" onclick="copy_msg()">
+              @helpsacchan ASTERってどんなことしてるの？
+            </td>
+          </tr>
+          <tr><td>ASTER</td><td>ASTERの問合せ先が知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ASTERの問い合わせ先を知りたい" onclick="copy_msg()">
+              @helpsacchan ASTERの問い合わせ先を知りたい
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="Command" class="container">
+    <div class="row">
+      <h2>コマンド表 (テスト系)</h2>
+      <div class="col-xs-12 col-lg-12">
+        <table>
+          <tr><th>カテゴリ</th><th>聞きたいこと</th><th>例　(クリックでコピーされます)</th></tr>
+          <tr><td>テスト</td><td>HAYST法について知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan HAYST法を教えて" onclick="copy_msg()">
+              @helpsacchan HAYST法を教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>CEGTestについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 原因結果グラフを教えて" onclick="copy_msg()">
+              @helpsacchan 原因結果グラフを教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>VSTePについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan VSTePを教えて" onclick="copy_msg()">
+              @helpsacchan VSTePを教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>ゆもつよメソッドについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ゆもつよメソッドを教えて" onclick="copy_msg()">
+              @helpsacchan ゆもつよメソッドを教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>機械学習のテストについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan AIのテストについて教えて" onclick="copy_msg()">
+              @helpsacchan AIのテストについて教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>海外のテストイベントについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 海外テストイベントを教えて" onclick="copy_msg()">
+              @helpsacchan 海外テストイベントを教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>テストイベントについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テストイベントを教えて" onclick="copy_msg()">
+              @helpsacchan テストイベントを教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>SETについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan SETってなに？" onclick="copy_msg()">
+              @helpsacchan SETってなに？
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>テストの必要性について知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan テストの必要性とは" onclick="copy_msg()">
+              @helpsacchan テストの必要性とは
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>アジャイルについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan アジャイルのことを教えて" onclick="copy_msg()">
+              @helpsacchan アジャイルのことを教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>青い会社について知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 青い会社って何" onclick="copy_msg()">
+              @helpsacchan 青い会社って何
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>赤い会社について知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 赤い会社って何" onclick="copy_msg()">
+              @helpsacchan 赤い会社って何
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>日科技連について知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 日科技連について教えて" onclick="copy_msg()">
+              @helpsacchan 日科技連について教えて
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>GAFAについて知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan GAFAとは" onclick="copy_msg()">
+              @helpsacchan GAFAとは
+            </td>
+          </tr>
+          <tr><td>テスト</td><td>納得いかない指示が来た</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 納得できない指示ってどうすればいいと思う？" onclick="copy_msg()">
+              @helpsacchan 納得できない指示ってどうすればいいと思う？
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+          
+  <div id="Command" class="container">
+    <div class="row">
+      <h2>コマンド表 (桜子さん関係)</h2>
+      <div class="col-xs-12 col-lg-12">
+        <table>
+          <tr><th>カテゴリ</th><th>聞きたいこと</th><th>例　(クリックでコピーされます)</th></tr>
+          <tr><td>桜子さん</td><td>朝のあいさつしたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan おはよう" onclick="copy_msg()">
+              @helpsacchan おはよう
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>昼のあいさつしたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan こんにちは" onclick="copy_msg()">
+              @helpsacchan こんにちは
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>夜のあいさつしたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan こんばんは" onclick="copy_msg()">
+              @helpsacchan こんばんは
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>お礼をしたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ありがとうございます" onclick="copy_msg()">
+              @helpsacchan ありがとうございます
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>桜子さんのことを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 桜子さんのことを教えて" onclick="copy_msg()">
+              @helpsacchan 桜子さんのことを教えて
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>桜子さんの中の人のことを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 中の人は誰？" onclick="copy_msg()">
+              @helpsacchan 中の人は誰？
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>年齢を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 歳いくつ？" onclick="copy_msg()">
+              @helpsacchan 歳いくつ？
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>血液型を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 血液型をおしえて" onclick="copy_msg()">
+              @helpsacchan 血液型をおしえて
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>出身地を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 出身地はどこ" onclick="copy_msg()">
+              @helpsacchan 出身地はどこ
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>背の高さを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 身長はどれくらい？" onclick="copy_msg()">
+              @helpsacchan 身長はどれくらい？
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>体重を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 体重はどれくらい？" onclick="copy_msg()">
+              @helpsacchan 体重はどれくらい？
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>きゅんちゃんとの関係を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan きゅんちゃんと知り合いですか？" onclick="copy_msg()">
+              @helpsacchan きゅんちゃんと知り合いですか？
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>りんちゃんとの関係を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan りんちゃんとどういう関係ですか？" onclick="copy_msg()">
+              @helpsacchan りんちゃんとどういう関係ですか？
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>恋人がいるか知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 恋人いますか？" onclick="copy_msg()">
+              @helpsacchan 恋人いますか？
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>将来の夢を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 将来の夢を教えてください" onclick="copy_msg()">
+              @helpsacchan 将来の夢を教えてください
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>尊敬する人を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 尊敬する人を教えてください" onclick="copy_msg()">
+              @helpsacchan 尊敬する人を教えてください
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>好きなモノを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 好きなものを教えて" onclick="copy_msg()">
+              @helpsacchan 好きなものを教えて
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>好きなモノを知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 嫌いなものを教えて" onclick="copy_msg()">
+              @helpsacchan 嫌いなものを教えて
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>家族を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 家族について教えて" onclick="copy_msg()">
+              @helpsacchan 家族について教えて
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>趣味を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 趣味について教えて" onclick="copy_msg()">
+              @helpsacchan 趣味について教えて
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>告りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 好きです。つきあってください。" onclick="copy_msg()">
+              @helpsacchan 好きです。つきあってください。
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>結婚したい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 結婚しよ" onclick="copy_msg()">
+              @helpsacchan 結婚しよ
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>ほめたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan 可愛いね" onclick="copy_msg()">
+              @helpsacchan 可愛いね
+            </td>
+          </tr>
+          <tr><td>桜子さん</td><td>ブロックの条件を知りたい</td>
+            <td class="copy-value c_pointer" data-clipboard-text="@helpsacchan ブロックの条件は……？" onclick="copy_msg()">
+              @helpsacchan ブロックの条件は……？
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  
+          
+        
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+  <script type="text/javascript">
+    new ClipboardJS('.copy-value');
+  </script>
+  <script>
+    function copy_msg(){
+      alert("コピーしました")
+    }
+  </script>
+
 </body>
 </html>
