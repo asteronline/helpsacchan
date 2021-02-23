@@ -30,17 +30,7 @@
     color: white;
     text-decoration: none;
 }
-
-#top a:link{
-    color: white;
-}
-#top a:visited{
-    color: white;
-}
 #top a:hover{
-    color: white;
-}
-#top a:active{
     color: white;
 }
 
