@@ -30,6 +30,10 @@
     color: white;
     text-decoration: none;
 }
+#top a:hover{
+    color: white;
+    text-decoration: none;
+}
 
 th,td {
     border: solid 1px;  /* 枠線指定 */
