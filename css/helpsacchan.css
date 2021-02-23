@@ -1,8 +1,14 @@
 .bg_base_color{
-    background-color: #f5b2b2;
+    background-color: #98B880;
 }
+
+.jumbotron {
+    background:url(../src/AdobeStock_341148156.jpeg) center no-repeat; 
+    background-size: cover;
+}
+
 .resizeimage img {
-    max-width: 1280px;
+    max-width: 640px;
     width: 100%;
 }
 
@@ -11,6 +17,20 @@
     font-weight: bold;
     text-decoration: none;
 }
+
+.top_button{
+    background-color: #444444;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius:30px;
+    padding: 5px;
+}
+.text_no_decoration{
+    color: white;
+    text-decoration: none;
+}
+
 th,td {
     border: solid 1px;  /* 枠線指定 */
     padding: 10px;      /* 余白指定 */
