@@ -122,7 +122,7 @@ margin: auto;
 text-align: center;
 }
 #page_top a::after{
-content: 'PAGE TOP';
+content: 'TOP';
 font-size: 13px;
 color: #fff;
 position: absolute;
